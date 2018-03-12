@@ -117,7 +117,7 @@ Try {
 		[string]$installPhase = 'Pre-Installation'
 
 		## Show Welcome Message
-		Show-InstallationWelcome -CloseApps '7zFM,7z,7zG' -CloseAppsCountdown 600 -MinimizeWindows $false -PersistPrompt -PersistPrompt
+		Show-InstallationWelcome -CloseApps '7zFM,7z,7zG' -CloseAppsCountdown 600 -MinimizeWindows $false -PersistPrompt
 
         ## Show Warning, without waiting, that Explorer will close and will attempt to re-open at end of installation.
         Show-InstallationPrompt -Message '7-Zip upgrade may cause Windows Explorer to crash. The installation process will attempt to restart Windows Explorer after the software is installed.' -ButtonRightText 'OK' -Icon Information -NoWait
