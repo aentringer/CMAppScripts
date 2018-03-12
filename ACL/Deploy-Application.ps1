@@ -72,8 +72,8 @@ Try {
 	[string]$appScriptAuthor = 'Alex Entringer'
 	##*===============================================
 	## Variables: Install Titles (Only set here to override defaults set by the toolkit)
-	[string]$installName = 'ACL for Windows 12.5.1.534'
-	[string]$installTitle = 'ACL for Windows 12.5.1.534'
+	[string]$installName = ''
+	[string]$installTitle = ''
 
 	##* Do not modify section below
 	#region DoNotModify
@@ -156,9 +156,6 @@ Try {
 
 		## <Perform Post-Installation tasks here>
         Remove-Item -Path "$env:PUBLIC\Desktop\ACL for Windows 12.lnk" -Force -Confirm:$false
-
-		## Display a message at the end of the install
-		#If (-not $useDefaultMsi) { Show-InstallationPrompt -Message 'You can customize text to appear at the end of an install or remove it completely for unattended installations.' -ButtonRightText 'OK' -Icon Information -NoWait }
 	}
 	ElseIf ($deploymentType -ieq 'Uninstall')
 	{
