@@ -16,7 +16,7 @@ The scripts on this page are designed to install [ACL Services Ltd's ACL Analyti
     * *Technically, 2015 is required, but 2017 superseded*
 1. Download the [OpenXML SDK v2.5](https://www.microsoft.com/en-us/download/details.aspx?id=30425 "OpenXMLSDKV25.msi")
 1. Download the [latest release](https://github.com/PSAppDeployToolkit/PSAppDeployToolkit/releases/latest) of PowerShell App Deployment Toolkit.
-1. Download the [Deploy-Application.ps1]() script from this repository.
+1. Download the [Deploy-Application.ps1](https://github.com/aentringer/CMAppScripts/raw/master/ACL/Deploy-Application.ps1) script from this repository.
 1. Extract the 'Toolkit' directory from the PowerShell App Deployment Toolkit
 1. Place the various installers from #1-7 in the 'Files' directory
     * Extract the AccessDatabaseEngine.exe to obtain the AceRedist.msi, as that is what is referenced by this installer.
