@@ -6,7 +6,7 @@ The scripts on this page are designed to install [7-Zip](https://www.7-zip.org/)
 
 1. Download the [7-Zip MSI Installer](https://www.7-zip.org/a/7z1801-x64.msi "7z1801-x64.msi") from the 7-Zip website.
 1. Download the [latest release](https://github.com/PSAppDeployToolkit/PSAppDeployToolkit/releases/latest) of PowerShell App Deployment Toolkit.
-1. Download the [Deploy-Application.ps1]() script from this repository.
+1. Download the [Deploy-Application.ps1](https://github.com/aentringer/CMAppScripts/raw/master/7-Zip/Deploy-Application.ps1) script from this repository.
 1. Extract the 'Toolkit' directory from the PowerShell App Deployment Toolkit
 1. Place the 7-Zip MSI in the 'Files' directory
 1. Overwrite the toolkit's 'Deploy-Application.ps1' with this repository's script.
