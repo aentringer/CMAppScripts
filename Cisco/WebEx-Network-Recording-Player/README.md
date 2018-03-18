@@ -4,6 +4,8 @@ The scripts on this page are designed to install [Cisco WebEx Network Recording 
 
 ## Installation
 
+**You may encounter issues when deploying with PS App Deployment Toolkit. If you do, just deploy the MSI directly. This is a rather low-risk app if it closes on users.**
+
 1. Download the [Cisco WebEx Network Recording Player Installer](https://akamaicdn.webex.com/client/WBXclient-32.11.0-388/nbr2player.msi "nbr2player.msi") from the Cisco WebEx website.
     * *See [How Do I Download the WebEx Client?](https://collaborationhelp.cisco.com/article/en-us/WBX21270) for details on how to obtain these exact links.*
 1. Download the [latest release](https://github.com/PSAppDeployToolkit/PSAppDeployToolkit/releases/latest) of PowerShell App Deployment Toolkit.
