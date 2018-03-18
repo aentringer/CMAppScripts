@@ -4,7 +4,7 @@ The scripts on this page are designed to install [Cisco WebEx Meeting Center](ht
 
 ## Installation
 
-1. Download the [Cisco WebEx MC Installer](https://akamaicdn.webex.com/client/WBXclient-32.11.0-388/webexmc.msi "webexmc.msi") from the 7-Zip website.
+1. Download the [Cisco WebEx MC Installer](https://akamaicdn.webex.com/client/WBXclient-32.11.0-388/webexmc.msi "webexmc.msi") from the Cisco Webex website.
     * *See [How Do I Download the WebEx Client?](https://collaborationhelp.cisco.com/article/en-us/WBX21270) for details on how to obtain these exact links.*
 1. Download the [latest release](https://github.com/PSAppDeployToolkit/PSAppDeployToolkit/releases/latest) of PowerShell App Deployment Toolkit.
 1. Download the [Deploy-Application.ps1](https://github.com/aentringer/CMAppScripts/raw/master/Cisco/WebEx-Meeting-Center/Deploy-Application.ps1) script from this repository.
