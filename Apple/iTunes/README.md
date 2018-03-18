@@ -18,12 +18,12 @@ The scripts on this page are designed to install [iTunes](https://www.apple.com/
 ## Detection Method
 
 * Windows Installer
-* AppleApplicationSupport64.msi
-  * GUID: {F0C4B709-8BF4-4A72-B527-12E7BF5482F8}
-  * Version (Equals): 6.2.1
-* AppleMobileDeviceSupport6464.msi
-  * GUID: {BD6778C5-6FA5-492A-ADD6-E706339C2A7B}
-  * Version (Equals): 11.0.2.4
-* iTunes64.msi
-  * GUID: {D7D4465C-B3B6-4BC1-B336-2803FB57BFAF}
-  * Version (Equals): 12.7.2.60
+  * AppleApplicationSupport64.msi
+    * GUID: {F0C4B709-8BF4-4A72-B527-12E7BF5482F8}
+    * Version (Equals): 6.2.1
+  * AppleMobileDeviceSupport6464.msi
+    * GUID: {BD6778C5-6FA5-492A-ADD6-E706339C2A7B}
+    * Version (Equals): 11.0.2.4
+  * iTunes64.msi
+    * GUID: {D7D4465C-B3B6-4BC1-B336-2803FB57BFAF}
+    * Version (Equals): 12.7.2.60
