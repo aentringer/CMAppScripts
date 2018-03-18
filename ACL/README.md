@@ -26,11 +26,13 @@ The scripts on this page are designed to install [ACL Services Ltd's ACL Analyti
 1. Build ConfigMgr Application according to your organization's procedures
 1. Specify the Deploy-Application.exe installer in the the ConfigMgr Application Deployment Installation Program field:
     * Deploy-Application.exe -DeploymentType Install
-1. Use the 'MSI' detection method (can be auto-populated from MSI)
-    * I would recommend referencing the 'ACL for Windows.msi', 'AceRedist.msi', and 'OpenXMLSDKV25.msi' files, as those are the files which are specified for uninstallation.
-    * The Visual C++ are not part of uninstallation, as they may be needed by other software on the system.
 
 ## Uninstallation
 
 1. Specify the Deploy-Application.exe uninstaller in the the ConfigMgr Application Deployment Installation Program field:
     * Deploy-Application.exe -DeploymentType Uninstall
+
+## Detection Method
+
+    * I would recommend referencing the 'ACL for Windows.msi', 'AceRedist.msi', and 'OpenXMLSDKV25.msi' files, as those are the files which are specified for uninstallation.
+    * The Visual C++ are not part of uninstallation, as they may be needed by other software on the system.
