@@ -21,5 +21,5 @@ The scripts on this page are designed to install [Investintech.com's Able2Extrac
 * File System
   * Path: '%ProgramFiles(x86)%\Investintech.com Inc\Able2Extract Professional 12.0'
   * File or folder name: 'Able2ExtractPro.exe'
-    * This file or folder is associated with a 32-bit application or 64-bit system: Checked
+    * [X] This file or folder is associated with a 32-bit application or 64-bit system
   * Version (Equals): '12.0.3'
