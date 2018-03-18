@@ -8,12 +8,12 @@ The scripts on this page are designed to install the deprecated/unsupported Cisc
     * Using archive software, such as 7-Zip, extract GVCInstall64.msi from downloaded .exe.
 1. Download the [Cisco VPN 64-bit Installer](https://www.dropbox.com/s/8xkijxtnu2lbdev/vpnclient-winx64-msi-5.0.07.0440-k9.exe?dl=0).
     * Using archive software, such as 7-Zip, extract vpnclient_setup.msi from downloaded .exe.
-1. Specify the [Install-CiscoVPN.ps1](https://github.com/aentringer/CMAppScripts/raw/master/Cisco/VPN/Install-CiscoVPN.ps1 "Install-CiscoVPN.ps1") file in the ConfigMgr Deployment Method Installation Box.
+1. Specify the [Install-CiscoVPN.ps1](https://github.com/aentringer/CMAppScripts/raw/master/Cisco/CiscoVPN/Install-CiscoVPN.ps1 "Install-CiscoVPN.ps1") file in the ConfigMgr Deployment Method Installation Box.
     * powershell.exe -ExecutionPolicy Bypass -File ".\Install-CiscoVPN.ps1"
 
 ## Uninstallation
 
-1. Specify the [Uninstall-CiscoVPN.ps1](https://github.com/aentringer/CMAppScripts/raw/master/Cisco/VPN/Uninstall-CiscoVPN.ps1 "Uninstall-CiscoVPN.ps1") file in the ConfigMgr Deployment Method Uninstallation Box.
+1. Specify the [Uninstall-CiscoVPN.ps1](https://github.com/aentringer/CMAppScripts/raw/master/Cisco/CiscoVPN/Uninstall-CiscoVPN.ps1 "Uninstall-CiscoVPN.ps1") file in the ConfigMgr Deployment Method Uninstallation Box.
     * powershell.exe -ExecutionPolicy Bypass -File ".\Uninstall-CiscoVPN.ps1"
 
 ## Detection Method
