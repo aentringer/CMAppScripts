@@ -34,5 +34,7 @@ The scripts on this page are designed to install [ACL Services Ltd's ACL Analyti
 
 ## Detection Method
 
-    * I would recommend referencing the 'ACL for Windows.msi', 'AceRedist.msi', and 'OpenXMLSDKV25.msi' files, as those are the files which are specified for uninstallation.
-    * The Visual C++ are not part of uninstallation, as they may be needed by other software on the system.
+* Windows Installer
+  * 'ACL for Windows.msi'
+    * GUID: {FE4E1EC7-570F-489C-A667-55AB521A87E7}
+    * Version (Equals): 12.5.1.534
