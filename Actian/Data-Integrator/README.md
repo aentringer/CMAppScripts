@@ -13,6 +13,7 @@ The scripts on this page are designed to install [Actian Data Integrator 9](http
 
 ## Detection Method
 
-    * Folder: 'C:\Program Files (x86)\Investintech.com Inc\Able2Extract Professional 12.0'
-    * File: 'Able2ExtractPro.exe'
-    * Version (Equals): '12.0.3'
+* File System
+  * Path: 'C:\Program Files (x86)\Investintech.com Inc\Able2Extract Professional 12.0'
+  * File or folder name: 'Able2ExtractPro.exe'
+  * Version (Equals): '12.0.3'
