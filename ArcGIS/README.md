@@ -18,6 +18,6 @@ The scripts on this page are designed to install [ArcGIS Desktop](https://deskto
 
 ## Detection Method
 
-    * Windows Installer
-    * GUID: {4740FC57-60FE-45BB-B513-3309F6B73183}
-    * Version (Equals): 10.5.7333
+* Windows Installer
+  * GUID: {4740FC57-60FE-45BB-B513-3309F6B73183}
+  * Version (Equals): 10.5.7333
