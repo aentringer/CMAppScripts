@@ -23,5 +23,7 @@ The scripts on this page are designed to install [7-Zip](https://www.7-zip.org/)
 
 ## Detection Method
 
+* Windows Installer
+  * 7z1801-x64.msi
     * MSI GUID: {23170F69-40C1-2702-1801-000001000000}
-    * Version (Equals): '18.01'
+    * Version (Equals): 18.01
