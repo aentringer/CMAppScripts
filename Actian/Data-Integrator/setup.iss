@@ -1,0 +1,33 @@
+[InstallShield Silent]
+Version=v7.00
+File=Response File
+[File Transfer]
+OverwrittenReadOnly=NoToAll
+[{902F0531-F2A5-4DBA-B5AE-7C1A9BE4A9F9}-DlgOrder]
+Dlg0={902F0531-F2A5-4DBA-B5AE-7C1A9BE4A9F9}-SdWelcome-0
+Count=6
+Dlg1={902F0531-F2A5-4DBA-B5AE-7C1A9BE4A9F9}-SdLicense2Rtf-0
+Dlg2={902F0531-F2A5-4DBA-B5AE-7C1A9BE4A9F9}-SdSetupTypeEx-0
+Dlg3={902F0531-F2A5-4DBA-B5AE-7C1A9BE4A9F9}-SdAskDestPath2-0
+Dlg4={902F0531-F2A5-4DBA-B5AE-7C1A9BE4A9F9}-SdStartCopy2-0
+Dlg5={902F0531-F2A5-4DBA-B5AE-7C1A9BE4A9F9}-SdFinish-0
+[{902F0531-F2A5-4DBA-B5AE-7C1A9BE4A9F9}-SdWelcome-0]
+Result=1
+[{902F0531-F2A5-4DBA-B5AE-7C1A9BE4A9F9}-SdLicense2Rtf-0]
+Result=1
+[{902F0531-F2A5-4DBA-B5AE-7C1A9BE4A9F9}-SdSetupTypeEx-0]
+Result=DesignStudio
+[{902F0531-F2A5-4DBA-B5AE-7C1A9BE4A9F9}-SdAskDestPath2-0]
+szDir=C:\Program Files (x86)\Actian\Cosmos9
+Result=1
+[{902F0531-F2A5-4DBA-B5AE-7C1A9BE4A9F9}-SdStartCopy2-0]
+Result=1
+[Application]
+Name=Actian Data Integrator 9
+Version=9.2.7.31
+Company=Actian Corporation.
+Lang=0009
+[{902F0531-F2A5-4DBA-B5AE-7C1A9BE4A9F9}-SdFinish-0]
+Result=1
+bOpt1=0
+bOpt2=0
