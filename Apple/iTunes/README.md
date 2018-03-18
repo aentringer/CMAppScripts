@@ -10,10 +10,12 @@ The scripts on this page are designed to install [iTunes](https://www.apple.com/
     * AppleMobileDeviceSupport6464.msi
     * iTunes64.msi
 1. Specify the [Install-iTunes.ps1](https://github.com/aentringer/CMAppScripts/raw/master/Apple/iTunes/Install-iTunes.ps1 "Install-iTunes.ps1") file in the ConfigMgr Deployment Method Installation Box.
+    * powershell.exe -ExecutionPolicy Bypass -File ".\Install-iTunes.ps1"
 
 ## Uninstallation
 
 1. Specify the [Uninstall-iTunes.ps1](https://github.com/aentringer/CMAppScripts/raw/master/Apple/iTunes/Uninstall-iTunes.ps1 "Uninstall-iTunes.ps") file in the ConfigMgr Deployment Method Uninstallation Box.
+    * powershell.exe -ExecutionPolicy Bypass -File ".\Uninstall-iTunes.ps1"
 
 ## Detection Method
 
