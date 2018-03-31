@@ -1,0 +1,8 @@
+[Setup]
+Lang=english
+Dir=C:\Program Files (x86)\KeePass Password Safe 2
+Group=KeePass Password Safe 2
+NoIcons=0
+SetupType=custom
+Components=core,keepasslibc,xsl,ngen
+Tasks=fileassoc
