@@ -63,12 +63,12 @@ Try {
 	## Variables: Application
 	[string]$appVendor = 'FileZilla Project'
 	[string]$appName = 'FileZilla'
-	[string]$appVersion = '3.31.0'
+	[string]$appVersion = '3.32.0'
 	[string]$appArch = ''
 	[string]$appLang = 'EN'
 	[string]$appRevision = '01'
 	[string]$appScriptVersion = '1.0.0'
-	[string]$appScriptDate = '3/31/2018'
+	[string]$appScriptDate = '4/05/2018'
 	[string]$appScriptAuthor = 'Alex Entringer'
 	##*===============================================
 	## Variables: Install Titles (Only set here to override defaults set by the toolkit)
@@ -137,7 +137,7 @@ Try {
 		}
 
 		## <Perform Installation tasks here>
-		Execute-Process -Path "$dirFiles\FileZilla_3.31.0_win64-setup.exe" -Parameters "/S /user=all"
+		Execute-Process -Path "$dirFiles\FileZilla_3.32.0_win64-setup.exe" -Parameters "/S /user=all"
 
 		##*===============================================
 		##* POST-INSTALLATION
