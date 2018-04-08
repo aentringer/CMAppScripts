@@ -17,10 +17,7 @@ The scripts on this page are designed to install [dbatools](https://dbatools.io/
 * Script Detection
 
 ```PowerShell
-if (Get-ChildItem -Path "$env:ProgramFiles\WindowsPowerShell\Modules\dbatools" -ErrorAction SilentlyContinue) {
-    Import-Module -Name dbatools -ErrorAction SilentlyContinue
-    if (Get-Module -Name dbatools) {
-        $true
-    }
+if (Get-InstalledModule dbatools -ErrorAction SilentlyContinue) {
+    $true
 }
 ```

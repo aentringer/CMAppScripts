@@ -1,7 +1,7 @@
 # Stop all other PowerShell Instances to prevent issues where dbatools is in use during installation
 Get-Process -Name powershell | Where-Object { $_.Id -ne $pid } | Stop-Process -Force -Confirm:$false
 
-#region Install dbatools module
+#region Update NuGet
 if (-not (Get-PackageProvider -Name NuGet -ListAvailable -ErrorAction SilentlyContinue)) {
 	Install-PackageProvider NuGet -Force
 }
@@ -9,8 +9,14 @@ elseif ((Get-PackageProvider -Name NuGet).Version -lt [version]2.8.5.201) {
     Remove-Item -Path 'C:\Program Files\PackageManagement\ProviderAssemblies\nuget' -Recurse -Force -Confirm:$false
     Install-PackageProvider NuGet -MinimumVersion '2.8.5.201' -Force
 }
+#endregion
 
-if (-not (Get-ChildItem -Path "$env:ProgramFiles\WindowsPowerShell\Modules\dbatools")) {
+#region Adjust InstallationPolicy for future updates
+Set-PSRepository -Name PSGallery -InstallationPolicy Trusted
+#endregion
+
+#region Install dbatools module
+if (-not (Get-InstalledModule dbatools -AllVersions -ErrorAction SilentlyContinue)) {
     Install-Module -Name dbatools -Force -Confirm:$false -AllowClobber -Scope AllUsers
 }
 #endregion
@@ -18,7 +24,8 @@ if (-not (Get-ChildItem -Path "$env:ProgramFiles\WindowsPowerShell\Modules\dbato
 #region Create Scheduled Task for updates
 $ActionParams = @{
     Id = 'Update dbatools PS Module'
-    Execute = 'powershell.exe -Command "Update-Module -Name dbatools"'
+    Execute = 'C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe'
+    Argument = '-Command "Update-Module -Name dbatools"'
 }
 
 $TaskParams = @{
