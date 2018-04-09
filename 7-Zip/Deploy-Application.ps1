@@ -151,6 +151,7 @@ Try {
 		Start-Process -FilePath cmd.exe -ArgumentList "/c $dirFiles\Configure-7Zip.cmd"
 
         # Restart explorer.exe as it was likely killed during installation
+        Start-Sleep -Seconds 5
         if (-not (Get-Process -Name explorer)) {
             Execute-ProcessAsUser -Path 'C:\Windows\explorer.exe' -RunLevel LeastPrivilege
         }
