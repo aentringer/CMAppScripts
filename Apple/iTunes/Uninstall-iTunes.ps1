@@ -6,21 +6,21 @@ Stop-Process -Name AppleMobileDeviceService -Force -Confirm:$false
 
 # Uninstall iTunes
 $iTunesArgs = @('/X'
-                '{D7D4465C-B3B6-4BC1-B336-2803FB57BFAF}'
+                '{5581A594-89CB-4062-81C3-2E9F7A76FBE0}'
                 '/qn'
                 'REBOOT=ReallySuppress')
 Start-Process -FilePath 'msiexec.exe' -ArgumentList $iTunesArgs -Wait
 
 # Uninstall Apple Mobile Device Support
 $AMDSArgs = @('/X'
-              '{BD6778C5-6FA5-492A-ADD6-E706339C2A7B}'
+              '{A05FDFEC-4377-49E0-82CB-B6D1386E89DA}'
               '/qn'
               'REBOOT=ReallySuppress')
 Start-Process -FilePath 'msiexec.exe' -ArgumentList $AMDSArgs -Wait
 
 # Uninstall Apple Application Support
 $ASUWArgs = @('/X'
-              '{F0C4B709-8BF4-4A72-B527-12E7BF5482F8}'
+              '{0ECA3BB5-4410-414B-B226-241FF1C12CD0}'
               '/qn'
               'REBOOT=ReallySuppress')
 Start-Process -FilePath 'msiexec.exe' -ArgumentList $ASUWArgs -Wait
