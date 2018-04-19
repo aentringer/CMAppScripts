@@ -1,10 +1,10 @@
-# Cisco WebEx Meeting Center - Version 32.11.0.388 - ConfigMgr
+# Cisco WebEx Meeting Center - Version 32.12.5.2 - ConfigMgr
 
 The scripts on this page are designed to install [Cisco WebEx Meeting Center](https://www.webex.com/) using ConfigMgr Current Branch Application Deployment. This installer leverages the [PowerShell App Deployment Toolkit](http://psappdeploytoolkit.com/).
 
 ## Installation
 
-1. Download the [Cisco WebEx MC Installer](https://akamaicdn.webex.com/client/WBXclient-32.11.0-388/webexmc.msi "webexmc.msi") from the Cisco Webex website.
+1. Download the [Cisco WebEx MC Installer](https://akamaicdn.webex.com/client/WBXclient-32.12.5-2/webexmc.msi) from the Cisco Webex website.
     * *See [How Do I Download the WebEx Client?](https://collaborationhelp.cisco.com/article/en-us/WBX21270) for details on how to obtain these exact links.*
 1. Download the [latest release](https://github.com/PSAppDeployToolkit/PSAppDeployToolkit/releases/latest) of PowerShell App Deployment Toolkit.
 1. Download the [Deploy-Application.ps1](https://github.com/aentringer/CMAppScripts/raw/master/Cisco/WebEx-Meeting-Center/Deploy-Application.ps1) script from this repository.
@@ -31,5 +31,5 @@ The scripts on this page are designed to install [Cisco WebEx Meeting Center](ht
 
 * Windows Installer
   * webexmc.msi
-    * MSI GUID: {EBC76CA0-2E6C-44D4-B99C-01BDC374EBE0}
-    * Version (Equals): 32.11.0.388
+    * MSI GUID: {4F79B650-1270-4A19-A35D-1FD6E2741650}
+    * Version (Equals): 32.12.5.2

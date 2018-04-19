@@ -63,12 +63,12 @@ Try {
 	## Variables: Application
 	[string]$appVendor = 'Cisco'
 	[string]$appName = 'WebEx Meeting Center'
-	[string]$appVersion = '32.11.0.388'
+	[string]$appVersion = '32.12.5.2'
 	[string]$appArch = ''
 	[string]$appLang = 'EN'
 	[string]$appRevision = '01'
 	[string]$appScriptVersion = '1.0.0'
-	[string]$appScriptDate = '03/17/2018'
+	[string]$appScriptDate = '04/19/2018'
 	[string]$appScriptAuthor = 'Alex Entringer'
 	##*===============================================
 	## Variables: Install Titles (Only set here to override defaults set by the toolkit)
@@ -175,7 +175,7 @@ Try {
 		}
 
 		# <Perform Uninstallation tasks here>
-		Execute-MSI -Action Uninstall -Path '{EBC76CA0-2E6C-44D4-B99C-01BDC374EBE0}'
+		Execute-MSI -Action Uninstall -Path '{4F79B650-1270-4A19-A35D-1FD6E2741650}'
 
 		##*===============================================
 		##* POST-UNINSTALLATION

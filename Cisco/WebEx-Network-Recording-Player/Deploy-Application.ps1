@@ -63,12 +63,12 @@ Try {
 	## Variables: Application
 	[string]$appVendor = 'Cisco'
 	[string]$appName = 'WebEx Network Recording Player'
-	[string]$appVersion = '32.11.0.388'
+	[string]$appVersion = '32.12.5.2'
 	[string]$appArch = ''
 	[string]$appLang = 'EN'
 	[string]$appRevision = '01'
 	[string]$appScriptVersion = '1.0.0'
-	[string]$appScriptDate = '03/17/2018'
+	[string]$appScriptDate = '04/19/2018'
 	[string]$appScriptAuthor = 'Alex Entringer'
 	##*===============================================
 	## Variables: Install Titles (Only set here to override defaults set by the toolkit)
@@ -175,7 +175,7 @@ Try {
 		}
 
 		# <Perform Uninstallation tasks here>
-		Execute-MSI -Action Uninstall -Path '{497191A8-4BEF-4D38-9A57-CE5AF7B9BB68}'
+		Execute-MSI -Action Uninstall -Path '{68A02D43-A792-4C73-8D7F-0E74E0AF9BA9}'
 
 		##*===============================================
 		##* POST-UNINSTALLATION
