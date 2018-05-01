@@ -63,12 +63,12 @@ Try {
 	## Variables: Application
 	[string]$appVendor = 'Igor Pavlov'
 	[string]$appName = '7-Zip'
-	[string]$appVersion = '18.01'
+	[string]$appVersion = '18.05'
 	[string]$appArch = ''
 	[string]$appLang = 'EN'
 	[string]$appRevision = '01'
 	[string]$appScriptVersion = '1.0.0'
-	[string]$appScriptDate = '03/11/2018'
+	[string]$appScriptDate = '05/01/2018'
 	[string]$appScriptAuthor = 'Alex Entringer'
 	##*===============================================
 	## Variables: Install Titles (Only set here to override defaults set by the toolkit)
@@ -120,7 +120,7 @@ Try {
 		Show-InstallationWelcome -CloseApps '7zFM,7z,7zG' -CloseAppsCountdown 600 -MinimizeWindows $false -PersistPrompt
 
         ## Show Warning, without waiting, that Explorer will close and will attempt to re-open at end of installation.
-        Show-InstallationPrompt -Message '7-Zip upgrade may cause Windows Explorer to crash. The installation process will attempt to restart Windows Explorer after the software is installed.' -ButtonRightText 'OK' -Icon Information -NoWait
+        Show-InstallationPrompt -Message '7-Zip upgrade may cause Windows Explorer to crash. The installation process will attempt to restart Windows Explorer after the software is installed.' -ButtonRightText 'OK' -Icon Information -NoWait -Timeout 180 -ExitOnTimeout:$false 
 
 		## Show Progress Message (with the default message)
 		Show-InstallationProgress -WindowLocation 'BottomRight'
@@ -139,7 +139,7 @@ Try {
 		}
 
 		## <Perform Installation tasks here>
-		Execute-MSI -Action Install -Path "$dirFiles\7z1801-x64.msi" -Parameters "REBOOT=ReallySuppress /qn"
+		Execute-MSI -Action Install -Path "$dirFiles\7z1805-x64.msi" -Parameters "REBOOT=ReallySuppress /qn"
 
 		##*===============================================
 		##* POST-INSTALLATION
@@ -184,7 +184,7 @@ Try {
 		}
 
 		# <Perform Uninstallation tasks here>
-		Execute-MSI -Action Uninstall -Path '{23170F69-40C1-2702-1801-000001000000}'
+		Execute-MSI -Action Uninstall -Path '{23170F69-40C1-2702-1805-000001000000}'
 
 		##*===============================================
 		##* POST-UNINSTALLATION
