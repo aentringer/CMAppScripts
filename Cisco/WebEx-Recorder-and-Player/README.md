@@ -1,4 +1,4 @@
-# Cisco WebEx Recorder and Player - Version 32.12.5.2 - ConfigMgr
+# Cisco WebEx Recorder and Player - Version 33.0.3.2 - ConfigMgr
 
 The scripts on this page are designed to install [Cisco WebEx Recorder and Player](https://www.webex.com/play-webex-recording.html) using ConfigMgr Current Branch Application Deployment. This installer leverages the [PowerShell App Deployment Toolkit](http://psappdeploytoolkit.com/).
 
@@ -6,7 +6,7 @@ The scripts on this page are designed to install [Cisco WebEx Recorder and Playe
 
 **You may encounter issues when deploying with PS App Deployment Toolkit. If you do, just deploy the MSI directly. This is a rather low-risk app if it closes on users.**
 
-1. Download the [Cisco WebEx Recorder and Player Installer](https://akamaicdn.webex.com/client/WBXclient-32.12.5-2/atrecply.msi) from the Cisco WebEx website.
+1. Download the [Cisco WebEx Recorder and Player Installer](https://akamaicdn.webex.com/client/WBXclient-33.0.3-2/atrecply.msi) from the Cisco WebEx website.
     * *See [How Do I Download the WebEx Client?](https://collaborationhelp.cisco.com/article/en-us/WBX21270) for details on how to obtain these exact links.*
 1. Download the [latest release](https://github.com/PSAppDeployToolkit/PSAppDeployToolkit/releases/latest) of PowerShell App Deployment Toolkit.
 1. Download the [Deploy-Application.ps1](https://github.com/aentringer/CMAppScripts/raw/master/Cisco/WebEx-Recorder-and-Player/Deploy-Application.ps1) script from this repository.
@@ -33,5 +33,5 @@ The scripts on this page are designed to install [Cisco WebEx Recorder and Playe
 
 * Windows Installer
   * atrecply.msi
-    * MSI GUID: {B2A193BC-2FCC-4A1F-AB8E-3B36DC8B209A}
-    * Version (Equals): 32.12.5.2
+    * MSI GUID: {46699F78-FD2E-4E31-B606-170AB9AC687F}
+    * Version (Equals): 33.0.3.2

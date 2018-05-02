@@ -1,4 +1,4 @@
-# Cisco WebEx Network Recording Player - Version 32.12.5.2 - ConfigMgr
+# Cisco WebEx Network Recording Player - Version 33.0.3.2 - ConfigMgr
 
 The scripts on this page are designed to install [Cisco WebEx Network Recording Player](https://www.webex.com/play-webex-recording.html) using ConfigMgr Current Branch Application Deployment. This installer leverages the [PowerShell App Deployment Toolkit](http://psappdeploytoolkit.com/).
 
@@ -6,7 +6,7 @@ The scripts on this page are designed to install [Cisco WebEx Network Recording 
 
 **You may encounter issues when deploying with PS App Deployment Toolkit. If you do, just deploy the MSI directly. This is a rather low-risk app if it closes on users.**
 
-1. Download the [Cisco WebEx Network Recording Player Installer](https://akamaicdn.webex.com/client/WBXclient-32.12.5-2/nbr2player.msi) from the Cisco WebEx website.
+1. Download the [Cisco WebEx Network Recording Player Installer](https://akamaicdn.webex.com/client/WBXclient-33.0.3-2/nbr2player.msi) from the Cisco WebEx website.
     * *See [How Do I Download the WebEx Client?](https://collaborationhelp.cisco.com/article/en-us/WBX21270) for details on how to obtain these exact links.*
 1. Download the [latest release](https://github.com/PSAppDeployToolkit/PSAppDeployToolkit/releases/latest) of PowerShell App Deployment Toolkit.
 1. Download the [Deploy-Application.ps1](https://github.com/aentringer/CMAppScripts/raw/master/Cisco/WebEx-Network-Recording-Player/Deploy-Application.ps1) script from this repository.
@@ -33,5 +33,5 @@ The scripts on this page are designed to install [Cisco WebEx Network Recording 
 
 * Windows Installer
   * nbr2player.msi
-    * MSI GUID: {68A02D43-A792-4C73-8D7F-0E74E0AF9BA9}
-    * Version (Equals): 32.12.5.2
+    * MSI GUID: {76F636B0-46B4-4E2A-9B3F-5A599BE1F854}
+    * Version (Equals): 33.0.3.2
