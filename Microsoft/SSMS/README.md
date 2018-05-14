@@ -1,10 +1,10 @@
-# SQL Server Management Studio Installer - Version 17.6 (14.0.17230.0) - ConfigMgr
+# SQL Server Management Studio Installer - Version 17.7 (14.0.17254.0) - ConfigMgr
 
 The scripts on this page are designed to install [SQL Server Management Studio](https://docs.microsoft.com/en-us/sql/ssms/download-sql-server-management-studio-ssms) using ConfigMgr Current Branch Application Deployment. This installer leverages the [PowerShell App Deployment Toolkit](http://psappdeploytoolkit.com/).
 
 ## Installation
 
-1. Download the [SSMS Installer](https://go.microsoft.com/fwlink/?linkid=870039) from the Microsoft website.
+1. Download the [SSMS Installer](https://go.microsoft.com/fwlink/?linkid=873126) from the Microsoft website.
 1. Download the [latest release](https://github.com/PSAppDeployToolkit/PSAppDeployToolkit/releases/latest) of PowerShell App Deployment Toolkit.
 1. Download the [Deploy-Application.ps1](https://github.com/aentringer/CMAppScripts/raw/master/Microsoft/SSMS/Deploy-Application.ps1) script from this repository.
 1. Extract the 'Toolkit' directory from the PowerShell App Deployment Toolkit
@@ -31,4 +31,4 @@ The scripts on this page are designed to install [SQL Server Management Studio](
   * [X] The file system setting must satisfy the following rule to indicate the presence of this application
     * Property: Version
     * Operator: Equals
-    * Value: 2017.140.17230.0
+    * Value: 2017.140.17254.0

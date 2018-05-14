@@ -63,12 +63,12 @@ Try {
 	## Variables: Application
 	[string]$appVendor = 'Microsoft'
 	[string]$appName = 'SQL Server Management Studio'
-	[string]$appVersion = '14.0.17230.0'
+	[string]$appVersion = '14.0.17254.0'
 	[string]$appArch = ''
 	[string]$appLang = 'EN'
 	[string]$appRevision = '01'
 	[string]$appScriptVersion = '1.0.0'
-	[string]$appScriptDate = '03/22/2018'
+	[string]$appScriptDate = '05/14/2018'
 	[string]$appScriptAuthor = 'Alex Entringer'
 	##*===============================================
 	## Variables: Install Titles (Only set here to override defaults set by the toolkit)
