@@ -1,4 +1,4 @@
-# Visual Studio Code Installer - Version 1.21.1 - ConfigMgr
+# Visual Studio Code Installer - Version 1.23.1 - ConfigMgr
 
 The scripts on this page are designed to install [Visual Studio Code](https://code.visualstudio.com/) using ConfigMgr Current Branch Application Deployment. This installer leverages the [PowerShell App Deployment Toolkit](http://psappdeploytoolkit.com/).
 

@@ -63,12 +63,12 @@ Try {
 	## Variables: Application
 	[string]$appVendor = 'Microsoft'
 	[string]$appName = 'Visual Studio Code'
-	[string]$appVersion = '1.21.1'
+	[string]$appVersion = '1.23.1'
 	[string]$appArch = ''
 	[string]$appLang = 'EN'
 	[string]$appRevision = '01'
 	[string]$appScriptVersion = ''
-	[string]$appScriptDate = '03/31/2018'
+	[string]$appScriptDate = '05/14/2018'
 	[string]$appScriptAuthor = 'Alex Entringer'
 	##*===============================================
 	## Variables: Install Titles (Only set here to override defaults set by the toolkit)
@@ -136,7 +136,7 @@ Try {
 		}
 
 		## <Perform Installation tasks here>
-		Execute-Process -Path "$dirFiles\VSCodeSetup-x64-1.21.1.exe" -Parameters '/verysilent /Tasks=addcontextmenufiles,addcontextmenufolders,addtopath'
+		Execute-Process -Path "$dirFiles\VSCodeSetup-x64-1.23.1.exe" -Parameters '/verysilent /Tasks=addcontextmenufiles,addcontextmenufolders,addtopath'
 
 		##*===============================================
 		##* POST-INSTALLATION
