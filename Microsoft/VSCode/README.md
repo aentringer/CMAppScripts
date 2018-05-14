@@ -30,4 +30,4 @@ The scripts on this page are designed to install [Visual Studio Code](https://co
   * Data Type: Version
   * [X] This registry setting must satisfy the following rule to indicate the presence of the application
     * Operator: Equals
-    * Value: 1.23.1
+    * Value: 1.21.1
