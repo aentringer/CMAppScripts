@@ -123,7 +123,6 @@ Try {
 		Show-InstallationProgress -WindowLocation 'BottomRight' -TopMost $false
 
 		## <Perform Pre-Installation tasks here>
-		Execute-Process -Path "$dirFiles\SSMS-Setup-ENU.exe" -Parameters '/install /quiet /norestart'
 
 		##*===============================================
 		##* INSTALLATION
@@ -137,7 +136,7 @@ Try {
 		}
 
 		## <Perform Installation tasks here>
-
+        Execute-Process -Path "$dirFiles\SSMS-Setup-ENU.exe" -Parameters '/install /quiet /norestart'
 
 		##*===============================================
 		##* POST-INSTALLATION
