@@ -63,12 +63,12 @@ Try {
 	## Variables: Application
 	[string]$appVendor = 'Microsoft'
 	[string]$appName = 'SQL Operations Studio'
-	[string]$appVersion = '0.28.6'
+	[string]$appVersion = '0.29.3'
 	[string]$appArch = ''
 	[string]$appLang = 'EN'
 	[string]$appRevision = '01'
 	[string]$appScriptVersion = ''
-	[string]$appScriptDate = '05/03/2018'
+	[string]$appScriptDate = '05/14/2018'
 	[string]$appScriptAuthor = 'Alex Entringer'
 	##*===============================================
 	## Variables: Install Titles (Only set here to override defaults set by the toolkit)
@@ -144,15 +144,17 @@ Try {
             '/NORESTART'
             '/MERGETASKS="addtopath,!runCode"'
         )
-		Execute-Process -Path "$dirFiles\sqlops-windows-setup-0.28.6.exe" -Parameters $installArgs
+		Execute-Process -Path "$dirFiles\sqlops-windows-setup-0.29.3.exe" -Parameters $installArgs
 
 		##*===============================================
 		##* POST-INSTALLATION
 		##*===============================================
 		[string]$installPhase = 'Post-Installation'
 
-		## <Perform Post-Installation tasks here>
-        Remove-Item -Path 'C:\Users\Public\Desktop\SQL Operations Studio.lnk' -Force -Confirm:$false
+        ## <Perform Post-Installation tasks here>
+        if (Test-Path -Path 'C:\Users\Public\Desktop\SQL Operations Studio.lnk') {
+            Remove-Item -Path 'C:\Users\Public\Desktop\SQL Operations Studio.lnk' -Force -Confirm:$false
+        }
 	}
 	ElseIf ($deploymentType -ieq 'Uninstall')
 	{
