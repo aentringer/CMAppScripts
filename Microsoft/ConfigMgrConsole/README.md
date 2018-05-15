@@ -1,4 +1,4 @@
-# ConfigMgr Console Installer - Version 1802 (5.1802.1082.1700) - ConfigMgr
+# ConfigMgr Console Installer - Version 1802 (5.1802.1082.1800) - ConfigMgr
 
 The scripts on this page are designed to install ConfigMgr Console using ConfigMgr Current Branch Application Deployment. This installer leverages the [PowerShell App Deployment Toolkit](http://psappdeploytoolkit.com/).
 
@@ -24,12 +24,23 @@ The scripts on this page are designed to install ConfigMgr Console using ConfigM
 
 ## Detection Method
 
-* File System
-  * Type: File
-  * Path: %ProgramFiles(x86)%\Microsoft Configuration Manager\AdminConsole\bin
-  * File or folder name: Microsoft.ConfigurationManagement.exe
-    * [X] This file or folder is associated with a 32-bit application on 64-bit systems
-  * [X] The file system setting must satisfy the following rule to indicate the presence of this application
-    * Property: Version
-    * Operator: Equals
-    * Value: 5.1802.1024.1000
+> * File System
+>   * Type: File
+>   * Path: %ProgramFiles(x86)%\Microsoft Configuration Manager\AdminConsole\bin
+>   * File or folder name: Microsoft.ConfigurationManagement.exe
+>     * [X] This file or folder is associated with a 32-bit application on 64-bit systems
+>   * [X] The file system setting must satisfy the following rule to indicate the presence of this application
+>   * Property: Version
+>   * Operator: Equals
+>   * Value: 5.1802.1024.1000
+>
+> AND
+>
+> * Registry
+>   * Hive: HKEY_LOCAL_MACHINE
+>   * Key: SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\\{F3CF82B1-A953-4BAC-9885-4215168FDB90}
+>   * Value: Comments
+>   * Data Type: String
+>   * [X] This registry setting must satisfy the following rule to indicate the presence of the application
+>     * Operator: Equals
+>     * Value: Includes 5.1802.1082.1800 update

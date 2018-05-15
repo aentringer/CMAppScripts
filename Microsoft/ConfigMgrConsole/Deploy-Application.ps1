@@ -63,12 +63,12 @@ Try {
 	## Variables: Application
 	[string]$appVendor = 'Microsoft'
 	[string]$appName = 'Configuration Manager Console'
-	[string]$appVersion = '5.1802.1082.1700'
+	[string]$appVersion = '5.1802.1082.1800'
 	[string]$appArch = ''
 	[string]$appLang = 'EN'
 	[string]$appRevision = '01'
 	[string]$appScriptVersion = '1.0.0'
-	[string]$appScriptDate = '03/23/2018'
+	[string]$appScriptDate = '05/06/2018'
 	[string]$appScriptAuthor = 'Alex Entringer'
 	##*===============================================
 	## Variables: Install Titles (Only set here to override defaults set by the toolkit)
@@ -123,9 +123,6 @@ Try {
 		Show-InstallationProgress -WindowLocation 'BottomRight' -TopMost $false
 
 		## <Perform Pre-Installation tasks here>
-        # Uninstall ConfigMgr Console 1710
-        Execute-MSI -Action Uninstall -Path '{F72B48F1-A060-42BA-938D-C6F5E543D5B8}'
-
 
 		##*===============================================
 		##* INSTALLATION
@@ -147,7 +144,7 @@ Try {
 		[string]$installPhase = 'Post-Installation'
 
 		## <Perform Post-Installation tasks here>
-
+        Set-ItemProperty -Path 'HKLM:\SOFTWARE\WOW6432Node\Microsoft\Windows\CurrentVersion\Uninstall\{F3CF82B1-A953-4BAC-9885-4215168FDB90}' -Name 'Comments' -Value 'Includes 5.1802.1082.1800 update'
 	}
 	ElseIf ($deploymentType -ieq 'Uninstall')
 	{
