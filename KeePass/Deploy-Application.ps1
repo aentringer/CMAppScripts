@@ -63,12 +63,12 @@ Try {
 	## Variables: Application
 	[string]$appVendor = 'Dominik Reichl'
 	[string]$appName = 'KeePass'
-	[string]$appVersion = '2.38'
+	[string]$appVersion = '2.39.1'
 	[string]$appArch = ''
 	[string]$appLang = 'EN'
 	[string]$appRevision = '01'
 	[string]$appScriptVersion = '1.0.0'
-	[string]$appScriptDate = '1/16/2018'
+	[string]$appScriptDate = '05/15/2018'
 	[string]$appScriptAuthor = 'Alex Entringer'
 	##*===============================================
 	## Variables: Install Titles (Only set here to override defaults set by the toolkit)
@@ -137,7 +137,7 @@ Try {
 		}
 
 		## <Perform Installation tasks here>
-		Execute-Process -Path "$dirFiles\KeePass-2.38-Setup.exe" -Parameters "/SP- /VERYSILENT /SUPPRESSMSGBOXES /NOCANCEL /NORESTART /LOG /LOADINF='$dirFiles\keepass.inf'"
+		Execute-Process -Path "$dirFiles\KeePass-2.39.1-Setup.exe" -Parameters "/SP- /VERYSILENT /SUPPRESSMSGBOXES /NOCANCEL /NORESTART /LOG /LOADINF='$dirFiles\keepass.inf'"
 
 		##*===============================================
 		##* POST-INSTALLATION

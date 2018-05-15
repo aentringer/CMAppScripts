@@ -16,7 +16,6 @@
             <LockAfterGlobalTime>300</LockAfterGlobalTime>
 		</WorkspaceLocking>
         <Policy>
-			<Export>false</Export>
 			<ExportNoKey>false</ExportNoKey>
 			<Print>false</Print>
 			<PrintNoKey>false</PrintNoKey>
