@@ -129,9 +129,28 @@ Try {
         Execute-Process -Path "$dirFiles\PRE\2012vcredist_x64.exe" -Parameters '/install /quiet /norestart'
         # 2013 Visual C++ 32-bit
         Execute-Process -Path "$dirFiles\PRE\2013vcredist_x64.exe" -Parameters '/install /quiet /norestart'
-        # 2017 Visual C++ 32/64biit
-        Execute-Process -Path "$dirFiles\PRE\2017vc_redist.x64.exe" -Parameters '/install /quiet /norestart'
-        Execute-Process -Path "$dirFiles\PRE\2017vc_redist.x86.exe" -Parameters '/install /quiet /norestart'
+        # 2017 Visual C++ 64bit
+        if ((Get-ItemProperty -Path 'HKLM:\SOFTWARE\Microsoft\VisualStudio\14.0\VC\Runtimes\x64\' -Name 'Installed').Installed) {
+            $2017x64 = [version](Get-ItemProperty -Path 'HKLM:\SOFTWARE\Microsoft\VisualStudio\14.0\VC\Runtimes\x64\' -Name 'Version').Version.TrimStart('v')
+            if ($2017x64 -lt [version]'14.14.26429.4') {
+                Execute-Process -Path "$dirFiles\PRE\2017vc_redist.x64.exe" -Parameters '/uninstall /quiet /norestart'
+                Execute-Process -Path "$dirFiles\PRE\2017vc_redist.x64.exe" -Parameters '/install /quiet /norestart'
+            }
+        }
+        else {
+            Execute-Process -Path "$dirFiles\PRE\2017vc_redist.x64.exe" -Parameters '/install /quiet /norestart'
+        }
+        # 2017 Visual C++ 32bit
+        if ((Get-ItemProperty -Path 'HKLM:\SOFTWARE\WOW6432Node\Microsoft\VisualStudio\14.0\VC\Runtimes\x86\' -Name 'Installed').Installed) {
+            $2017x86 = [version](Get-ItemProperty -Path 'HKLM:\SOFTWARE\WOW6432Node\Microsoft\VisualStudio\14.0\VC\Runtimes\x86\' -Name 'Version').Version.TrimStart('v')
+            if ($2017x86 -lt [version]'14.14.26429.4') {
+                Execute-Process -Path "$dirFiles\PRE\2017vc_redist.x86.exe" -Parameters '/uninstall /quiet /norestart'
+                Execute-Process -Path "$dirFiles\PRE\2017vc_redist.x86.exe" -Parameters '/install /quiet /norestart'
+            }
+        }
+        else {
+            Execute-Process -Path "$dirFiles\PRE\2017vc_redist.x86.exe" -Parameters '/install /quiet /norestart'
+        }
         # OpenXML SDK v2.5
         Execute-MSI -Action Install -Path "$dirFiles\PRE\OpenXMLSDKv25.msi" -Parameters 'REBOOT=ReallySuppress /qn'
 
