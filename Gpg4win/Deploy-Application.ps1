@@ -63,7 +63,7 @@ Try {
 	## Variables: Application
 	[string]$appVendor = 'Intevation GmbH | g10 Code GmbH'
 	[string]$appName = 'Gpg4win'
-	[string]$appVersion = '3.0.3'
+	[string]$appVersion = '3.1.2'
 	[string]$appArch = ''
 	[string]$appLang = 'EN'
 	[string]$appRevision = '01'
@@ -137,7 +137,7 @@ Try {
 		}
 		
 		## <Perform Installation tasks here>
-        Execute-Process -Path "$dirFiles\gpg4win-3.0.3.exe" -Parameters "/S /C=`"$dirFiles\gpg4win.ini`""
+        Execute-Process -Path "$dirFiles\gpg4win-3.1.2.exe" -Parameters "/S /C=`"$dirFiles\gpg4win.ini`""
 		
 		##*===============================================
 		##* POST-INSTALLATION
