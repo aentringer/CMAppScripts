@@ -33,4 +33,4 @@ The scripts on this page are designed to install [Gpg4win](https://www.gpg4win.o
   * Data Type: String
   * [X] This registry setting must satisfy the following rule to indicate the presence of the application
     * Operator: Equals
-    * Value: 3.0.3
+    * Value: 3.1.2
