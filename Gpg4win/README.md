@@ -1,4 +1,4 @@
-# Gpg4win Installer - Version 3.0.3 - ConfigMgr
+# Gpg4win Installer - Version 3.1.2 - ConfigMgr
 
 The scripts on this page are designed to install [Gpg4win](https://www.gpg4win.org/index.html) using ConfigMgr Current Branch Application Deployment. This installer leverages the [PowerShell App Deployment Toolkit](http://psappdeploytoolkit.com/).
 
