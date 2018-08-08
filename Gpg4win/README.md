@@ -4,7 +4,7 @@ The scripts on this page are designed to install [Gpg4win](https://www.gpg4win.o
 
 ## Installation
 
-1. Download the [Gpg4win Installer](https://files.gpg4win.org/gpg4win-3.0.3.exe) from the Gpg4win website.
+1. Download the [Gpg4win Installer](https://files.gpg4win.org/gpg4win-3.1.2.exe) from the Gpg4win website.
 1. Download the [latest release](https://github.com/PSAppDeployToolkit/PSAppDeployToolkit/releases/latest) of PowerShell App Deployment Toolkit.
 1. Download the [Deploy-Application.ps1](https://github.com/aentringer/CMAppScripts/raw/master/Gpg4win/Deploy-Application.ps1) script from this repository.
 1. Download the [gpg4win.ini](https://github.com/aentringer/CMAppScripts/raw/master/Gpg4win/Files/gpg4win.ini) file from this repository.
