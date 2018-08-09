@@ -63,13 +63,13 @@ Try {
 	## Variables: Application
 	[string]$appVendor = 'Don Ho'
 	[string]$appName = 'Notepad++'
-	[string]$appVersion = '7.5.6'
+	[string]$appVersion = '7.5.8'
 	[string]$appArch = ''
 	[string]$appLang = 'EN'
 	[string]$appRevision = '01'
 	[string]$appScriptVersion = '1.0.0'
-	[string]$appScriptDate = '03/31/2018'
-	[string]$appScriptAuthor = 'Alex Entringer'
+	[string]$appScriptDate = '07/23/2018'
+	[string]$appScriptAuthor = 'Phil Hanus'
 	##*===============================================
 	## Variables: Install Titles (Only set here to override defaults set by the toolkit)
 	[string]$installName = ''
@@ -137,7 +137,7 @@ Try {
 		}
 
 		## <Perform Installation tasks here>
-		Execute-Process -Path "$dirFiles\npp.7.5.6.Installer.x64.exe" -Parameters '/S /noUpdater'
+		Execute-Process -Path "$dirFiles\npp.7.5.8.Installer.x64.exe" -Parameters '/S /noUpdater'
 
 		##*===============================================
 		##* POST-INSTALLATION

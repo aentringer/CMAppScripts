@@ -1,10 +1,10 @@
-# Notepad++ Installer - Version 7.5.6 - ConfigMgr
+# Notepad++ Installer - Version 7.5.8 - ConfigMgr
 
 The scripts on this page are designed to install [Notepad++](https://notepad-plus-plus.org/) using ConfigMgr Current Branch Application Deployment. This installer leverages the [PowerShell App Deployment Toolkit](http://psappdeploytoolkit.com/).
 
 ## Installation
 
-1. Download the [Notepad++ Installer](https://notepad-plus-plus.org/repository/7.x/7.5.6/npp.7.5.6.Installer.x64.exe) from the Notepad++ website.
+1. Download the [Notepad++ Installer](https://notepad-plus-plus.org/repository/7.x/7.5.8/npp.7.5.8.Installer.x64.exe) from the Notepad++ website.
 1. Download the [latest release](https://github.com/PSAppDeployToolkit/PSAppDeployToolkit/releases/latest) of PowerShell App Deployment Toolkit.
 1. Download the [Deploy-Application.ps1](https://github.com/aentringer/CMAppScripts/raw/master/Notepad++/Deploy-Application.ps1) script from this repository.
 1. Extract the 'Toolkit' directory from the PowerShell App Deployment Toolkit
@@ -30,4 +30,4 @@ The scripts on this page are designed to install [Notepad++](https://notepad-plu
   * [X] The file system setting must satisfy the following rule to indicate the presence of this application
     * Property: Version
     * Operator: Equals
-    * Value: 7.5.6
+    * Value: 7.5.8
