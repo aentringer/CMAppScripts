@@ -1,10 +1,10 @@
-# FileZilla Installer - Version 3.32.0 - ConfigMgr
+# FileZilla Installer - Version 3.35.2 - ConfigMgr
 
 The scripts on this page are designed to install [FileZilla](https://filezilla-project.org/) using ConfigMgr Current Branch Application Deployment. This installer leverages the [PowerShell App Deployment Toolkit](http://psappdeploytoolkit.com/).
 
 ## Installation
 
-1. Download the [FileZilla Installer](https://dl2.cdn.filezilla-project.org/client/FileZilla_3.32.0_win64-setup.exe) from the FileZilla website.
+1. Download the [FileZilla Installer](https://dl3.cdn.filezilla-project.org/client/FileZilla_3.35.2_win64-setup.exe) from the FileZilla website.
 1. Download the [latest release](https://github.com/PSAppDeployToolkit/PSAppDeployToolkit/releases/latest) of PowerShell App Deployment Toolkit.
 1. Download the [Deploy-Application.ps1](https://github.com/aentringer/CMAppScripts/raw/master/FileZilla/Deploy-Application.ps1) script from this repository.
 1. Download the [fzdefaults.xml](https://github.com/aentringer/CMAppScripts/raw/master/FileZilla/Files/fzdefaults.xml) script from this repository.
@@ -36,4 +36,4 @@ The scripts on this page are designed to install [FileZilla](https://filezilla-p
   * Data Type: Version
   * [X] This registry setting must satisfy the following rule to indicate the presence of the application
     * Operator: Equals
-    * Value: 3.32.0
+    * Value: 3.35.2
