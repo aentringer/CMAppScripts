@@ -1,10 +1,10 @@
-# Google Chrome Enterprise Installer - Version 67.0.3396.87 - ConfigMgr
+# Google Chrome Enterprise Installer - Version 68.0.3440.75 - ConfigMgr
 
 The scripts on this page are designed to install [Google Chrome Enterprise](https://enterprise.google.com/chrome/chrome-browser/) using ConfigMgr Current Branch Application Deployment. This installer leverages the [PowerShell App Deployment Toolkit](http://psappdeploytoolkit.com/).
 
 ## Installation
 
-1. Download the [Google Chrome Installer](https://enterprise.google.com/chrome/chrome-browser/thankyou.html?platform=win64msi&usagestats=0) from the Google Chrome website.
+1. Download the [Google Chrome Installer](https://enterprise.google.com/chrome/chrome-browser/thankyou.html?platform=win64bundle&usagestats=1) from the Google Chrome website.
 1. Download the [latest release](https://github.com/PSAppDeployToolkit/PSAppDeployToolkit/releases/latest) of PowerShell App Deployment Toolkit.
 1. Download the [Deploy-Application.ps1](https://github.com/aentringer/CMAppScripts/raw/master/Google/Chrome/Deploy-Application.ps1) script from this repository.
 1. Download the [master_preferences](https://github.com/aentringer/CMAppScripts/raw/master/Google/Chrome/Files/master_preferences) script from this repository.
@@ -30,7 +30,7 @@ The scripts on this page are designed to install [Google Chrome Enterprise](http
 
 * Windows Installer
   * googlechromestandaloneenterprise64.msi
-    * MSI GUID: {A5573283-D630-3900-8DCE-E463BDDB5E0E}
+    * MSI GUID: {3504AEE9-2997-371B-BA00-55BCB4760193}
     * Exists
 
 AND
@@ -43,4 +43,4 @@ AND
   * [X] The file system setting must satisfy the following rule to indicate the presence of this application
     * Property: Version
     * Operator: Equals
-    * Value: 67.0.3396.87
+    * Value: 68.0.3440.75
