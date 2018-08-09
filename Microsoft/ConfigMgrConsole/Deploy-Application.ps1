@@ -63,13 +63,13 @@ Try {
 	## Variables: Application
 	[string]$appVendor = 'Microsoft'
 	[string]$appName = 'Configuration Manager Console'
-	[string]$appVersion = '5.1802.1082.1800'
+	[string]$appVersion = '5.1806.1074.1000'
 	[string]$appArch = ''
 	[string]$appLang = 'EN'
 	[string]$appRevision = '01'
 	[string]$appScriptVersion = '1.0.0'
-	[string]$appScriptDate = '05/06/2018'
-	[string]$appScriptAuthor = 'Alex Entringer'
+	[string]$appScriptDate = '08/01/2018'
+	[string]$appScriptAuthor = 'Phil Hanus'
 	##*===============================================
 	## Variables: Install Titles (Only set here to override defaults set by the toolkit)
 	[string]$installName = ''
@@ -143,8 +143,10 @@ Try {
 		##*===============================================
 		[string]$installPhase = 'Post-Installation'
 
-		## <Perform Post-Installation tasks here>
-        Set-ItemProperty -Path 'HKLM:\SOFTWARE\WOW6432Node\Microsoft\Windows\CurrentVersion\Uninstall\{F3CF82B1-A953-4BAC-9885-4215168FDB90}' -Name 'Comments' -Value 'Includes 5.1802.1082.1800 update'
+        ## <Perform Post-Installation tasks here>
+        ## NOTE: The next line can be commented out for MAJOR version release.
+        ## NOTE: If removed be sure to not include the detection method noted in the readme.
+        Set-ItemProperty -Path 'HKLM:\SOFTWARE\WOW6432Node\Microsoft\Windows\CurrentVersion\Uninstall\{664D6976-FEF0-4B9A-ABB4-3F0465D3FA7F}' -Name 'Comments' -Value 'Includes 5.1806.1074.1200 update'
 	}
 	ElseIf ($deploymentType -ieq 'Uninstall')
 	{
@@ -174,7 +176,7 @@ Try {
 		}
 
 		# <Perform Uninstallation tasks here>
-		Execute-MSI -Action Uninstall -Path '{F3CF82B1-A953-4BAC-9885-4215168FDB90}'
+		Execute-MSI -Action Uninstall -Path '{664D6976-FEF0-4B9A-ABB4-3F0465D3FA7F}'
 
 		##*===============================================
 		##* POST-UNINSTALLATION
