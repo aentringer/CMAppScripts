@@ -1,4 +1,4 @@
-# Visual Studio Code Installer - Version 1.23.1 - ConfigMgr
+# Visual Studio Code Installer - Version 1.25.1 - ConfigMgr
 
 The scripts on this page are designed to install [Visual Studio Code](https://code.visualstudio.com/) using ConfigMgr Current Branch Application Deployment. This installer leverages the [PowerShell App Deployment Toolkit](http://psappdeploytoolkit.com/).
 
@@ -25,9 +25,9 @@ The scripts on this page are designed to install [Visual Studio Code](https://co
 
 * Registry
   * Hive: HKEY_LOCAL_MACHINE
-  * Key: SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\\{EA457B21-F73E-494C-ACAB-524FDE069979}_is1
+  * Key: SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\\{EA457B21-F73E-494C-ACAB-524FDE069978}_is1
   * Value: DisplayVersion
   * Data Type: Version
   * [X] This registry setting must satisfy the following rule to indicate the presence of the application
     * Operator: Equals
-    * Value: 1.23.1
+    * Value: 1.25.1
