@@ -30,7 +30,7 @@ The scripts on this page are designed to install [Google Chrome Enterprise](http
 
 * Windows Installer
   * googlechromestandaloneenterprise64.msi
-    * MSI GUID: {3504AEE9-2997-371B-BA00-55BCB4760193}
+    * MSI GUID: {21BED74A-2399-33DA-A4C2-DA59444ADEC4}
     * Exists
 
 AND
@@ -43,4 +43,4 @@ AND
   * [X] The file system setting must satisfy the following rule to indicate the presence of this application
     * Property: Version
     * Operator: Equals
-    * Value: 68.0.3440.75
+    * Value: 68.0.3440.106
