@@ -1,10 +1,10 @@
-# SQL Operations Studio Installer - Version 0.29.3 - ConfigMgr
+# SQL Operations Studio Installer - Version 0.31.4 - ConfigMgr
 
 The scripts on this page are designed to install [SQL Operations Studio](https://code.visualstudio.com/) using ConfigMgr Current Branch Application Deployment. This installer leverages the [PowerShell App Deployment Toolkit](http://psappdeploytoolkit.com/).
 
 ## Installation
 
-1. Download the [SQL Operations Studio Installer](https://github.com/Microsoft/sqlopsstudio/releases/download/0.29.3/sqlops-windows-setup-0.29.3.exe) from the Microsoft website.
+1. Download the [SQL Operations Studio Installer](https://github.com/Microsoft/sqlopsstudio/releases/download/0.31.4/sqlops-windows-setup-0.31.4.exe) from the Microsoft website.
 1. Download the [latest release](https://github.com/PSAppDeployToolkit/PSAppDeployToolkit/releases/latest) of PowerShell App Deployment Toolkit.
 1. Download the [Deploy-Application.ps1](https://github.com/aentringer/CMAppScripts/raw/master/Microsoft/SQLOpsStudio/Deploy-Application.ps1) script from this repository.
 1. Extract the 'Toolkit' directory from the PowerShell App Deployment Toolkit
@@ -30,4 +30,4 @@ The scripts on this page are designed to install [SQL Operations Studio](https:/
   * Data Type: Version
   * [X] This registry setting must satisfy the following rule to indicate the presence of the application
     * Operator: Equals
-    * Value: 0.29.3
+    * Value: 0.31.4

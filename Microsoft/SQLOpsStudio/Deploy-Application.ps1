@@ -63,13 +63,13 @@ Try {
 	## Variables: Application
 	[string]$appVendor = 'Microsoft'
 	[string]$appName = 'SQL Operations Studio'
-	[string]$appVersion = '0.29.3'
+	[string]$appVersion = '0.31.4'
 	[string]$appArch = ''
 	[string]$appLang = 'EN'
 	[string]$appRevision = '01'
 	[string]$appScriptVersion = ''
-	[string]$appScriptDate = '05/14/2018'
-	[string]$appScriptAuthor = 'Alex Entringer'
+	[string]$appScriptDate = '07/19/2018'
+	[string]$appScriptAuthor = 'Phil Hanus'
 	##*===============================================
 	## Variables: Install Titles (Only set here to override defaults set by the toolkit)
 	[string]$installName = ''
@@ -144,7 +144,7 @@ Try {
             '/NORESTART'
             '/MERGETASKS="addtopath,!runCode"'
         )
-		Execute-Process -Path "$dirFiles\sqlops-windows-setup-0.29.3.exe" -Parameters $installArgs
+		Execute-Process -Path "$dirFiles\sqlops-windows-setup-0.31.4.exe" -Parameters $installArgs
 
 		##*===============================================
 		##* POST-INSTALLATION
