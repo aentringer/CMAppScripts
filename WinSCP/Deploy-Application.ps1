@@ -63,13 +63,13 @@ Try {
 	## Variables: Application
 	[string]$appVendor = 'Martin Prikryl'
 	[string]$appName = 'WinSCP'
-	[string]$appVersion = '5.13.1'
+	[string]$appVersion = '5.13.3'
 	[string]$appArch = ''
 	[string]$appLang = 'EN'
 	[string]$appRevision = '01'
 	[string]$appScriptVersion = '1.0.0'
-	[string]$appScriptDate = '04/03/2018'
-	[string]$appScriptAuthor = 'Alex Entringer'
+	[string]$appScriptDate = '06/18/2018'
+	[string]$appScriptAuthor = 'Phil Hanus'
 	##*===============================================
 	## Variables: Install Titles (Only set here to override defaults set by the toolkit)
 	[string]$installName = ''
@@ -137,7 +137,7 @@ Try {
 		}
 
 		## <Perform Installation tasks here>
-		Execute-Process -Path "$dirFiles\WinSCP-5.13.1-Setup.exe" -Parameters "/SP- /VERYSILENT /LOADINF='$dirFiles\WinSCP.inf' /NORESTART /NOCANCEL /LOG"
+		Execute-Process -Path "$dirFiles\WinSCP-5.13.3-Setup.exe" -Parameters "/SP- /VERYSILENT /LOADINF='$dirFiles\WinSCP.inf' /NORESTART /NOCANCEL /LOG"
 
 		##*===============================================
 		##* POST-INSTALLATION
