@@ -63,13 +63,13 @@ Try {
 	## Variables: Application
 	[string]$appVendor = 'Python Software Foundation'
 	[string]$appName = 'Python'
-	[string]$appVersion = '3.6.5'
+	[string]$appVersion = '3.7.0'
 	[string]$appArch = ''
 	[string]$appLang = 'EN'
 	[string]$appRevision = ''
 	[string]$appScriptVersion = '1.0.0'
-	[string]$appScriptDate = '03/31/2018'
-	[string]$appScriptAuthor = 'Alex Entringer'
+	[string]$appScriptDate = '06/27/2018'
+	[string]$appScriptAuthor = 'Phil Hanus'
 	##*===============================================
 	## Variables: Install Titles (Only set here to override defaults set by the toolkit)
 	[string]$installName = ''
@@ -137,7 +137,7 @@ Try {
 		}
 
 		## <Perform Installation tasks here>
-		Execute-Process -Path "$dirFiles\python-3.6.5.exe" -Parameters '/quiet InstallAllUsers=1 PrependPath=1 Shortcuts=0'
+		Execute-Process -Path "$dirFiles\python-3.7.0.exe" -Parameters '/quiet InstallAllUsers=1 PrependPath=1 Shortcuts=0'
 
 		##*===============================================
 		##* POST-INSTALLATION
@@ -174,7 +174,7 @@ Try {
 		}
 
 		# <Perform Uninstallation tasks here>
-        Execute-Process -Path "$dirFiles\python-3.6.5.exe" -Parameters '/quiet /uninstall'
+        Execute-Process -Path "$dirFiles\python-3.7.0.exe" -Parameters '/quiet /uninstall'
         # Uninstall Python Launcher (not covered by the above command)
         Execute-MSI -Action Uninstall -Path '{8A66FEC2-E443-4219-B9AC-F9B10607B57C}'
 
