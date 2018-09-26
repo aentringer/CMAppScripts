@@ -63,13 +63,13 @@ Try {
 	## Variables: Application
 	[string]$appVendor = 'Google'
 	[string]$appName = 'Chrome'
-	[string]$appVersion = '69.0.3497.81'
+	[string]$appVersion = '69.0.3497.100'
 	[string]$appArch = ''
 	[string]$appLang = 'EN'
 	[string]$appRevision = '01'
 	[string]$appScriptVersion = '1.0.0'
-	[string]$appScriptDate = '09/04/2018'
-	[string]$appScriptAuthor = 'Alex Entringer'
+	[string]$appScriptDate = '09/17/2018'
+	[string]$appScriptAuthor = 'Phil Hanus'
 	##*===============================================
 	## Variables: Install Titles (Only set here to override defaults set by the toolkit)
 	[string]$installName = ''
@@ -177,7 +177,7 @@ Try {
 		}
 
 		# <Perform Uninstallation tasks here>
-        Execute-MSI -Action Uninstall -Path '{9A0CF2BF-1F53-3338-B711-53C165017D1A}'
+        Execute-MSI -Action Uninstall -Path '{CF96AAAE-85FF-3621-8D4C-C60F91F8F281}'
 
 		##*===============================================
 		##* POST-UNINSTALLATION
